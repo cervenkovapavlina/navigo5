@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Můj vlastní dokument</title>
+</head>
+<body>
+<h1>Nějaký popisek</h1>
+<!--<span style="background-color: deepskyblue; width: 50px; height: 20px"></span>-->
+<div class="kontejner">
+    <div class="moje">
+        <a href="https://navigo3.com/cs/" target="_blank"><img width="200px" src="hafan.jpg" alt=""></a>
+    </div>
+    <div class="moje2">Pokus div 2</div>
+</div>
+
+<h1>Users</h1>
+<table><tr><th>name</th><th>surname</th></tr>
+    <tbody>
+        <tr class="clickable">
+            <td>Pepa</td>
+            <td>Novak</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<script>
+    // const row = document.getElementsByClassName("clickable")
+    // console.log(row)
+    // console.log(row.length)
+    const row = document.getElementsByClassName("clickable")[0]
+    // console.log(row)
+    // row.addEventListener("click", ()=>console.log("Hello, world"))
+    // function(){
+    //    console.log("Hello, world")
+    // }
+    // console.log(window.location)
+    row.addEventListener("click", ()=>window.location = "https://navigo3.com/cs/")
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

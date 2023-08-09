@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="updateUser.js" defer></script>
+    <script src="listUsers.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="createUser.php" method="post">
+      <div class="kontejner2">
+        <label for="username"
+          >Username&nbsp;
+          <input type="text" name="username" id="username" required />
+        </label>
+        <label for="password"
+          >Password&nbsp;
+          <input type="password" name="password" id="password" required />
+        </label>
+        <label for="utilization"
+          >Utilization&nbsp;
+          <input type="number" name="utilization" id="utilization" required />
+        </label>
+        <label for="state"
+          >State&nbsp;
+          <select name="state" id="state">
+            <option value="ACTIVE">Active</option>
+            <option value="SUSPENDED">Suspended</option>
+            <option value="TERMINATED">Terminated</option>
+          </select>
+        </label>
+        <label for="currencyId"
+          >Currencyid&nbsp;
+          <select name="currencyId" id="currencyId">
+            <option value="1">CZK</option>
+            <option value="2">EUR</option>
+          </select>
+        </label>
+        <label for="hourlyRate"
+          >hourlyRate&nbsp;
+          <input type="number" name="hourlyRate" id="hourlyRate" required />
+        </label>
+        <label for="hours"
+          >hours&nbsp;
+          <input type="number" name="hours" id="hours" required />
+        </label>
+      </div>
+      <input type="submit" value="submit" />
+    </form>
+
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Login</th>
+        <th>Password</th>
+        <th>Utilization</th>
+        <th>State</th>
+      </tr>
+      <tbody id="table_body"></tbody>
+    </table>
+  </body>
+</html>

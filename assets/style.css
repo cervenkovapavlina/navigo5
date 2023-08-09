@@ -1,0 +1,54 @@
+
+
+.moje{
+    background-color: blueviolet;
+    font-size: 16px;
+    border: 2px dotted yellow;
+    /* margin: 16px 10px 7px 2px; */
+    color: azure;
+    white-space: nowrap;
+}
+.moje2{
+    background-color: green;
+    font-size: 20px;
+    width: 500px;
+    border: 2px solid yellow;
+    /* margin: 16px; */
+    color: azure;
+    white-space: wrap;
+}
+.kontejner{
+    background-color: burlywood;
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.kontejner2{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    color: #c03;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+th {
+    padding: 5px;
+}
+
+.clickable:hover {
+    background-color: red;
+    cursor: pointer;
+}
